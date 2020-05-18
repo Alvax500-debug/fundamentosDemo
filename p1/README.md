@@ -1,5 +1,13 @@
 #                    Reporte Practica 1
 
+##                      Resumen 
+
+Se trabajo por primera vez con git y github para crear, manejar y actualizar repositorios, asi como un par de ejercicios de java, aunque el enfoque principal fue el uso de git mediante linea de comandos para hacer lo antes mencionado ademas de incluir comandos utiles para trabajar desde linea de comandos lo que se necesite o se realice durante el curso.
+
+##                      Desarrollo
+
+
+
 8. Se utiliza el comando `git clone tipo_url`, donde el **_tipo_url_** varia dependiendo del tipo de clonado que se hara al repositorio, ya sea via **http** (autenticacion de usuario mediante logueo en el shell) o via **ssh** (autenticado via clave ssh generada por la maquina que se esta usando y que se registra en la cuenta de github del usuario).
 
 9. Se usa el comando `git pull` para actualizar el repositorio local con los cambios que se subieron al repositorio almacenado en github.
