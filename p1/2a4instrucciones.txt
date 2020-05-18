@@ -1,0 +1,10 @@
+1.- usar el siguiente comando: echo "# fundamentos" >> README.md
+2.- ejecutar el comando <git init> en el directorio que se desea vincular con el repositorio, el nombre debe ser el mismo que el del repositorio creado en github
+3.- usar el comando: echo "*.class" >> .gitignore
+4.- ejecutar el comando <git add .> para añadir los archivos nuevos y los cambios realizados a cualquier archio ya existente el repositorio, en caso de haberlos
+5.- ejecutar el comando <git commit -m "mensaje"> para confirmar los cambios a subir y un mensaje para identificar que se hizo con ese cambio
+6.- ejecutar el comando <git remote add origin https://github.com/cuenta_github/repositorio.git> para vincular el repositorio local con el creado desde la cuenta de github
+7.- ejecutar el comando <git push -u origin master> para subir los cambios de local al repositorio en la rama master o principal
+8.- usar el comando <mkdir> para crear la carpeta correspondiente a la practica1
+9.- usar el siguiente comando: echo "# Reporte Practica 1" >> README.md ---- para crear el archivo README.md que sirve como reporte de la practica 1
+10.- una vez mas ejecutar los comandos de git (add . , commit -m "mensaje" , push), en ese orden para agregar, confirmar y subir los cambios al repositorio de github
