@@ -35,7 +35,7 @@ public class Ej3{
 
         }
 
-        System.out.println(contador);
+        //System.out.println(contador);
 
         if (contador == 0) {
             System.out.println("No has escrito nada");
