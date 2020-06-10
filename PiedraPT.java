@@ -7,6 +7,8 @@ public class semana4{
 
         System.out.println("Juego de piedra, papel o tijera");
 
+        int totalMenos3%;
+
         String usrResp = " ", pcResp = " ";
 
         System.out.print("Escoge tu opcion (piedra, papel o tijera): ");
