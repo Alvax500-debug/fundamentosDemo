@@ -175,15 +175,15 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 2.  FIN PARA
 3.  Mayor = (lado_uno > (lado_dos + lado_tres))
 4.  SI (Mayor == false) ENTONCES
-    4. 1.   Mayor = (lado_dos > (lado_uno + lado_tres))
+  4. 1.   Mayor = (lado_dos > (lado_uno + lado_tres))
 5.  FIN SI
 6.  SI (Mayor == false) ENTONCES
-    6. 1.   Mayor = (lado_tres > (lado_uno + lado_dos))
+  6. 1.   Mayor = (lado_tres > (lado_uno + lado_dos))
 7.  FIN SI
 8.  SI (Mayor == false) ENTONCES
-    8. 1.   No se puede formar un triangulo con esas medidas
+  8. 1.   No se puede formar un triangulo con esas medidas
 9.  SINO
-    9. 1.   Si se puede formar un triangulo con esas medidas
+  9. 1.   Si se puede formar un triangulo con esas medidas
 10. FIN SI
 11. FIN
 
