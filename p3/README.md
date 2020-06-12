@@ -88,7 +88,7 @@ El algortimo a seguir fue:
 **NOTA 424:** el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej4.java*
 
 4. 2. 5. Realizar un programa que ingreados 10 numeros por el usuario, contar los numeros pares e impares y al final mostrara el conteo de cada uno.
-..* El algortimo usado para resolver el problema es el siguiente:
+* El algortimo usado para resolver el problema es el siguiente:
 
 1. PARA (i=0; i<10; i++) HACER
 11.     Ingresa un numero
@@ -107,7 +107,7 @@ El algortimo a seguir fue:
 Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de la practica:
 
 5. 1. Realizar el programa del inciso _3_ en la seccion **4.2** de la practica, pero con la estructura de control **switch** (seleccion multiple).
-..* El algoritmo paera resolver dicho problema es el siguiente:
+  * El algoritmo paera resolver dicho problema es el siguiente:
 
 1. MIENTRAS (calificacion != "FIN") 
 11.     Ingresar Calificacion
