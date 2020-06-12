@@ -103,21 +103,21 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 
 5. 1. Realizar el programa del inciso _3_ en la seccion **4.2** de la practica, pero con la estructura de control **switch** (seleccion multiple), el algoritmo paera resolver dicho problema es el siguiente:
 
-..1. MIENTRAS (calificacion != "FIN") 
-..11.     Ingresar Calificacion
-..12.     OPCION (calificacion) ELEGIR
-..13.     Caso "NA":
-..131.        suma = suma + 5
-..132.        contador = contador + 1
-..14.     Caso "S":
-..141.        suma = suma + 6
-..142.        contador = contador + 1
-..15.     Caso "B":
-..151.        suma = suma + 8.7
-..152.        contador = contador + 1
-..16.     Caso "MB":
-..161.        suma = suma + 10
-..162.        contador = contador + 1
+1. MIENTRAS (calificacion != "FIN") 
+11.     Ingresar Calificacion
+12.     OPCION (calificacion) ELEGIR
+13.     Caso "NA":
+131.        suma = suma + 5
+132.        contador = contador + 1
+14.     Caso "S":
+141.        suma = suma + 6
+142.        contador = contador + 1
+15.     Caso "B":
+151.        suma = suma + 8.7
+152.        contador = contador + 1
+16.     Caso "MB":
+161.        suma = suma + 10
+162.        contador = contador + 1
 17.     Por defecto:
 171.        No se recibio ningun valor valido para el sistema
 18.     FIN OPCION
