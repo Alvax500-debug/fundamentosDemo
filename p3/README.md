@@ -112,21 +112,21 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 1. MIENTRAS (calificacion != "FIN") 
   1. 1.     Ingresar Calificacion
   1. 2.     OPCION (calificacion) ELEGIR
-  1. 3.     Caso "NA":
-    1. 3. 1.        suma = suma + 5
-    1. 3. 2.        contador = contador + 1
-  1. 4.     Caso "S":
-    1. 4. 1.        suma = suma + 6
-    1. 4. 2.        contador = contador + 1
-  1. 5.     Caso "B":
-    1. 5. 1.        suma = suma + 8.7
-    1. 5. 2.        contador = contador + 1
-  1. 6.     Caso "MB":
-    1. 6. 1.        suma = suma + 10
-    1. 6. 2.        contador = contador + 1
-  1. 7.     Por defecto:
-    1. 7. 1.        No se recibio ningun valor valido para el sistema
-  1. 8.     FIN OPCION
+  1. 2. 1.     Caso "NA":
+    1. 2. 1. 1.       suma = suma + 5
+    1. 2. 1. 2.       contador = contador + 1
+  1. 2. 2.     Caso "S":
+    1. 2. 2. 1.       suma = suma + 6
+    1. 2. 2. 2.       contador = contador + 1
+  1. 2. 3.     Caso "B":
+    1. 2. 3. 1.       suma = suma + 8.7
+    1. 2. 3. 2.       contador = contador + 1
+  1. 2. 4.     Caso "MB":
+    1. 2. 4. 1.       suma = suma + 10
+    1. 2. 4. 2.       contador = contador + 1
+  1. 2. 5.     Por defecto:
+    1. 2. 5. 1.        No se recibio ningun valor valido para el sistema
+  1. 3.     FIN OPCION
 2. FIN MIENTRAS
 3. SI (contador == 0) ENTONCES
   3. 1.     El programa termino sin recibir valores
@@ -136,6 +136,8 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
   4. 2.     Escribir (promedio)
 5. FIN SI
 6. FIN
+
+**NOTA 51:**
 
 5. 2. Calcular el promedio de los numeros positivos ingresados por el usuario y en caso de ingresar un numero negativo, el programa finalizara y dara el resultado en pantalla.
 * Para ello se siguen las instrucciones del algortimo que es:
@@ -155,6 +157,37 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
   4. 2.   Escribir (promedio)
 5.  FIN SI
 6.  FIN
+
+**NOTA 52:**
+
+5. 3. Un programa que solicita 3 longitudes reales y te indicara si se puede formar un triangulo con ella o no, en base al criterio de _si la longitud de cualquiera de los 3 lados es mayor a la suma de los otros 2_.
+* El algortimo quedaria escrito de la siguiente manera:
+
+1.  PARA (i=0; i<3; i++) HACER
+  1. 1.     OPCION (i) ELEGIR
+  1. 1. 1.      Caso 0:
+  1. 1. 1. 1.       leer (lado_uno)
+  1. 1. 2.      Caso 1:
+  1. 1. 2. 1.       leer (lado_dos)
+  1. 1. 3.      Caso 0:
+  1. 1. 3. 1.       leer (lado_tres)
+  1. 2.     FIN OPCION    
+2.  FIN PARA
+3.  Mayor = (lado_uno > (lado_dos + lado_tres))
+4.  SI (Mayor == false) ENTONCES
+    4. 1.   Mayor = (lado_dos > (lado_uno + lado_tres))
+5.  FIN SI
+6.  SI (Mayor == false) ENTONCES
+    6. 1.   Mayor = (lado_tres > (lado_uno + lado_dos))
+7.  FIN SI
+8.  SI (Mayor == false) ENTONCES
+    8. 1.   No se puede formar un triangulo con esas medidas
+9.  SINO
+    9. 1.   Si se puede formar un triangulo con esas medidas
+10. FIN SI
+11. FIN
+
+**NOTA 53:** 
 
 ##                        Conclusion
 
