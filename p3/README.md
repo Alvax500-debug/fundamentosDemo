@@ -92,11 +92,11 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
 
 1. PARA (i=0; i<10; i++) HACER
   11.     Ingresa un numero
-  12.      SI (numero%2 == 0) ENTONCES
+  12.     SI (numero%2 == 0) ENTONCES
     121.         par = par + 1
-  13.      SINO 
+  13.     SINO 
     131.         impar = impar + 1
-  14.      FIN SI
+  14.     FIN SI
 2. FIN PARA
 3. Escribir (par)
 4. Escribir (impar)
