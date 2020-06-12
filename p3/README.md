@@ -8,7 +8,8 @@ Esta practica consistio en repasar y mejorar nuestro dominio sobre las estructur
 
 Comenzamos con el inciso 4, la seccion 4.1 donde se dio un repaso de todas las estructuras de control basicas de Java, todo en el archivo _principal.java_, posteriormente en el inciso 4.2 se resolvieron unos ejercicios usando las estructuras de control ya vistas para comprender mejor su uso en la practica, los ejercicios son los siguientes:
 
-4. 2. 1. Programa que te pregunta si estas registrado y te saludo si lo estas, en caso contrario, te solicita ingresar tu nombre y posteriormente te saluda, el algoritmo seguido fue el siguiente:
+4. 2. 1. Programa que te pregunta si estas registrado y te saludo si lo estas, en caso contrario, te solicita ingresar tu nombre y posteriormente te saluda.
+El algoritmo seguido fue el siguiente:
 
 1. Preguntar si el usuario esta registrado
 2. SI (respuesta == no) ENTONCES
@@ -21,7 +22,8 @@ Comenzamos con el inciso 4, la seccion 4.1 donde se dio un repaso de todas las e
 
 **NOTA 421:** en java para determinar si el contenido de una variable de tipo _String (objetos)_ es igual a una cadena de texto determinada, se usa un metodo llamado _equals()_ y determina si ambas cadenas de texto coinciden regresando un dato _boolean_; el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej1.java* 
 
-4. 2. 2. Programa que dira si el numero ingresado por el usuario es par o impar, el algoritmo es el siguiente
+4. 2. 2. Programa que dira si el numero ingresado por el usuario es par o impar.
+El algoritmo es el siguiente:
 
 1. Solicitar un numero
 2. SI (numero%2 == 0) ENTONCES
@@ -38,7 +40,8 @@ _MB =  10_
 _B = 8.7_
 _s = 6_
 _NA = 5_
-Y una ves que se introduzca la palabra _FIN_ se detendra el programa, el algoritmo a seguir es el siguiente:
+Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
+El algoritmo a seguir es el siguiente:
 
 1. MIENTRAS (calificacion != "FIN") 
 11.     Ingresar Calificacion
@@ -70,7 +73,8 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa, el algorit
 
 **NOTA 423:** en este caso se uso igualmente el metodo _equals()_ de los objetos de tipo _String_ junto con la _negacion (!)_ para cambiar el resultado del metodo antes mencionado y asi verificar la adecuada ejecucion del ciclo MIENTRAS bajo la condicion de termino con la palabra "FIN"; el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej3.java*
 
-4. 2. 4. Programa que determinara el mayor de todos los numeros positivos ingresados por el usuario y una vez que se ingrese un numero negativo, el programa terminara y mostrara en pantalla el mayor de todos los numeros ingresados, el algortimo a seguir fue:
+4. 2. 4. Programa que determinara el mayor de todos los numeros positivos ingresados por el usuario y una vez que se ingrese un numero negativo, el programa terminara y mostrara en pantalla el mayor de todos los numeros ingresados.
+El algortimo a seguir fue:
 
 1. MIENTRAS (numero >= 0)
 11.     Ingrese un numero
@@ -81,9 +85,10 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa, el algorit
 3. Escribir (mayor)
 4. FIN
 
-**NOTA 424:**el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej4.java*
+**NOTA 424:** el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej4.java*
 
-4. 2. 5. Realizar un programa que ingreados 10 numeros por el usuario, contar los numeros pares e impares y al final mostrara el conteo de cada uno, el algortimo usado para resolver el problema es el siguiente:
+4. 2. 5. Realizar un programa que ingreados 10 numeros por el usuario, contar los numeros pares e impares y al final mostrara el conteo de cada uno.
+El algortimo usado para resolver el problema es el siguiente:
 
 1. PARA (i=0; i<10; i++) HACER
 11.     Ingresa un numero
@@ -101,7 +106,8 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa, el algorit
 
 Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de la practica:
 
-5. 1. Realizar el programa del inciso _3_ en la seccion **4.2** de la practica, pero con la estructura de control **switch** (seleccion multiple), el algoritmo paera resolver dicho problema es el siguiente:
+5. 1. Realizar el programa del inciso _3_ en la seccion **4.2** de la practica, pero con la estructura de control **switch** (seleccion multiple).
+El algoritmo paera resolver dicho problema es el siguiente:
 
 1. MIENTRAS (calificacion != "FIN") 
 11.     Ingresar Calificacion
@@ -131,7 +137,8 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 5. FIN SI
 6. FIN
 
-5. 2. Calcular el promedio de los numeros positivos ingresados por el usuario y en caso de ingresar un numero negativo, el programa finalizara y dara el resultado en pantalla, para ello se siguen las instrucciones del algortimo que es:
+5. 2. Calcular el promedio de los numeros positivos ingresados por el usuario y en caso de ingresar un numero negativo, el programa finalizara y dara el resultado en pantalla.
+Para ello se siguen las instrucciones del algortimo que es:
 
 1.  MIENTRAS (numero >= 0)
 1. 1.   Ingresa un numero
