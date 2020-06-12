@@ -103,7 +103,7 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 
 5. 1. Realizar el programa del inciso _3_ en la seccion **4.2** de la practica, pero con la estructura de control **switch** (seleccion multiple), el algoritmo paera resolver dicho problema es el siguiente:
 
-1. MIENTRAS (calificacion != "FIN") 
+... 1. MIENTRAS (calificacion != "FIN") 
 11.     Ingresar Calificacion
 12.     OPCION (calificacion) ELEGIR
 13.     Caso "NA":
