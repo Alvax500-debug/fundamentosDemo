@@ -13,10 +13,10 @@ Comenzamos con el inciso 4, la seccion 4.1 donde se dio un repaso de todas las e
 
 1. Preguntar si el usuario esta registrado
 2. SI (respuesta == no) ENTONCES
-  21.     Preguntar nombre del usuario
-  22.     Saludar al usuario
+  2. 1.     Preguntar nombre del usuario
+  2. 2.     Saludar al usuario
 3. SINO
-  31.     Saludar al usuario
+  3. 1.     Saludar al usuario
 4. FIN SI
 5. FIN 
 
@@ -27,9 +27,9 @@ Comenzamos con el inciso 4, la seccion 4.1 donde se dio un repaso de todas las e
 
 1. Solicitar un numero
 2. SI (numero%2 == 0) ENTONCES
-  21.     El numero es par
+  2. 1.     El numero es par
 3. SINO 
-  31.     El numero es impar
+  3. 1.     El numero es impar
 4. FIN SI
 5. FIN
 
@@ -44,30 +44,30 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
 * El algoritmo a seguir es el siguiente:
 
 1. MIENTRAS (calificacion != "FIN") 
-  11.     Ingresar Calificacion
-  12.     SI (calificacion == "NA") ENTONCES
-    121.        suma = suma + 5
-    122.        contador = contador + 1
-  13.     FIN SI
-  14.     SI (calificacion == "S") ENTONCES
-    141.        suma = suma + 6
-    142.        contador = contador + 1
-  15.     FIN SI
-  16.     SI (calificacion == "B") ENTONCES
-    161.        suma = suma + 8.7
-    162.        contador = contador + 1
-  17.     FIN SI
-  18.     SI (calificacion == "MB") ENTONCES
-    181.        suma = suma + 10
-    182.        contador = contador + 1
+  1. 1.     Ingresar Calificacion
+  1. 2.     SI (calificacion == "NA") ENTONCES
+    1. 2. 1.        suma = suma + 5
+    1. 2. 2.        contador = contador + 1
+  1. 3.     FIN SI
+  1. 4.     SI (calificacion == "S") ENTONCES
+    1. 4. 1.        suma = suma + 6
+    1. 4. 2.        contador = contador + 1
+  1. 5.     FIN SI
+  1. 6.     SI (calificacion == "B") ENTONCES
+    1. 6. 1.        suma = suma + 8.7
+    1. 6. 2.        contador = contador + 1
+  1. 7.     FIN SI
+  1. 8.     SI (calificacion == "MB") ENTONCES
+    1. 8. 1.        suma = suma + 10
+    1. 8. 2.        contador = contador + 1
   19.     FIN SI
 2. FIN MIENTRAS
 3. SI (contador == 0) ENTONCES
-  31.     El programa termino sin recibir valores
-  32.     Ir al paso 6
+  3. 1.     El programa termino sin recibir valores
+  3. 2.     Ir al paso 6
 4. SINO
-  41.     promedio = suma / contador
-  42.     Escribir (promedio)
+  4. 1.     promedio = suma / contador
+  4. 2.     Escribir (promedio)
 5. FIN SI
 6. FIN
 
@@ -77,10 +77,10 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
 * El algortimo a seguir fue:
 
 1. MIENTRAS (numero >= 0)
-  11.     Ingrese un numero
-  12.     SI (numero > mayor) ENTONCES
-    121.        mayor = numero
-  13.     FIN SI
+  1. 1.     Ingrese un numero
+  1. 2.     SI (numero > mayor) ENTONCES
+    1. 2. 1.        mayor = numero
+  1. 3.     FIN SI
 2. FIN MIENTRAS
 3. Escribir (mayor)
 4. FIN
@@ -91,12 +91,12 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
 * El algortimo usado para resolver el problema es el siguiente:
 
 1. PARA (i=0; i<10; i++) HACER
-  11.     Ingresa un numero
-  12.     SI (numero%2 == 0) ENTONCES
-    121.         par = par + 1
-  13.     SINO 
-    131.         impar = impar + 1
-  14.     FIN SI
+  1. 1.     Ingresa un numero
+  1. 2.     SI (numero%2 == 0) ENTONCES
+    1. 2. 1.         par = par + 1
+  1. 3.     SINO 
+    1. 3. 1.         impar = impar + 1
+  1. 4.     FIN SI
 2. FIN PARA
 3. Escribir (par)
 4. Escribir (impar)
@@ -110,30 +110,30 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 * El algoritmo paera resolver dicho problema es el siguiente:
 
 1. MIENTRAS (calificacion != "FIN") 
-  11.     Ingresar Calificacion
-  12.     OPCION (calificacion) ELEGIR
-  13.     Caso "NA":
-    131.        suma = suma + 5
-    132.        contador = contador + 1
-  14.     Caso "S":
-    141.        suma = suma + 6
-    142.        contador = contador + 1
-  15.     Caso "B":
-    151.        suma = suma + 8.7
-    152.        contador = contador + 1
-  16.     Caso "MB":
-    161.        suma = suma + 10
-    162.        contador = contador + 1
-  17.     Por defecto:
-    171.        No se recibio ningun valor valido para el sistema
-  18.     FIN OPCION
+  1. 1.     Ingresar Calificacion
+  1. 2.     OPCION (calificacion) ELEGIR
+  1. 3.     Caso "NA":
+    1. 3. 1.        suma = suma + 5
+    1. 3. 2.        contador = contador + 1
+  1. 4.     Caso "S":
+    1. 4. 1.        suma = suma + 6
+    1. 4. 2.        contador = contador + 1
+  1. 5.     Caso "B":
+    1. 5. 1.        suma = suma + 8.7
+    1. 5. 2.        contador = contador + 1
+  1. 6.     Caso "MB":
+    1. 6. 1.        suma = suma + 10
+    1. 6. 2.        contador = contador + 1
+  1. 7.     Por defecto:
+    1. 7. 1.        No se recibio ningun valor valido para el sistema
+  1. 8.     FIN OPCION
 2. FIN MIENTRAS
 3. SI (contador == 0) ENTONCES
-  31.     El programa termino sin recibir valores
-  32.     Ir al paso 6
+  3. 1.     El programa termino sin recibir valores
+  3. 2.     Ir al paso 6
 4. SINO
-  41.     promedio = suma / contador
-  42.     Escribir (promedio)
+  4. 1.     promedio = suma / contador
+  4. 2.     Escribir (promedio)
 5. FIN SI
 6. FIN
 
