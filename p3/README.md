@@ -137,7 +137,7 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 5. FIN SI
 6. FIN
 
-**NOTA 51:**
+**NOTA 51:** para el caso de usar **switch** con _Strings_ o cadenas de texto, se debe ser muy especifico tanto para definir los casos o cada _case_ correspondiente, asi como la respuesta esperada, se debe tener cuidado y ser muy claro ya que la estructura de control **switch** es sensible a mayusculas y minusculas y la respuesta debe ser escrita exactamente igual a la cadena de texto especificada en cada _case_; el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_uno.java*
 
 5. 2. Calcular el promedio de los numeros positivos ingresados por el usuario y en caso de ingresar un numero negativo, el programa finalizara y dara el resultado en pantalla.
 * Para ello se siguen las instrucciones del algortimo que es:
@@ -158,7 +158,7 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 5.  FIN SI
 6.  FIN
 
-**NOTA 52:**
+**NOTA 52:** el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_dos.java*
 
 5. 3. Un programa que solicita 3 longitudes reales y te indicara si se puede formar un triangulo con ella o no, en base al criterio de _si la longitud de cualquiera de los 3 lados es mayor a la suma de los otros 2_.
 * El algortimo quedaria escrito de la siguiente manera:
@@ -187,9 +187,9 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 10. FIN SI
 11. FIN
 
-**NOTA 53:** 
+**NOTA 53:** en este caso se compara un lado con la suma de los otros 2, uno por uno para verificar que se puede construir el triangulo con las medidas ingresadas y al final si no se puede, esto te lo indicara en pantalla; el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_tres.java*
 
-5. 4. Un programa que dado un numero mayor que 1 y proporcionado por el usuario, indique si el numero es primo o no, para saberlo el residuo de la division sera la clave, donde si el residuo de del numero "n" entre [ _2 ... n-1_ ] debe ser diferente de 0, si es 0 en alguno de los casos, el numero no es primo.
+5. 4. Un programa que dado un numero mayor que 1 y proporcionado por el usuario, indique si el numero es primo o no, para saberlo el residuo de la division sera la clave, donde si el residuo de del numero "n" entre [ _2, ... n-1_ ] debe ser diferente de 0, si es 0 en alguno de los casos, el numero no es primo.
 * El algoritmo solucion seria:
 
 1. HACER
@@ -213,7 +213,7 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 4.  FIN SI
 5. FIN
 
-**NOTA 54:**
+**NOTA 54:** en este caso la forma mas idonea de corroborar si un numero es primo es usando la estructura de control **for** con un numero _inicial_ igual a 2 y un limite final de _n - 1_ o _numeroIngresado - 1_ y mediante el residuo, si el residuo es 0, el ciclo se rompe y te lo indica en la pantalla, pero si durante el ciclo nunca arroja como residuo 0, el ciclo finaliza y te indica que el numero es primo; el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_cuatro.java*
 
 5. 5. Determinar el n-esimo numero Fibonacci de un numero "n" dado por el usuario, cumpliendo las siguientes restricciones:
 * _fn = (n-1) + (n-2) para n>=2_
@@ -240,7 +240,7 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 2.  MIENTRAS (numero < 0)
 3. FIN
 
-**NOTA 55:**
+**NOTA 55:** el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_cinco.java*
 
 5. 6. Mostrar los primeros "n" numeros de Padovan de un "n" numero dado por el usuario, siguiendo las reglas:
 * _pn = (n-2) + (n-3) para n>=3_
@@ -270,7 +270,13 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 2. MIENTRAS (numero < 0)
 3. FIN
 
-**NOTA 56:**
+**NOTA 56:** el algortimo codificado en *Java* se encuentra en el archivo llamado *Cinco_seis.java*
+
+##                        Resultados
+
+Como resultados se debe empezar por un fallo en la sintaxis de un ejemplo en la estructura _DO-WHILE_ por una variable incorrecta, lo que resulto en un error de compilacion por una variable que no existe y se menciona en el codigo, en el archivo _principal.java_, posteriormente se procedio a realizar los ejercicios de ejemplo de la seccion **4.2** de la practica **3** y de los cuales se hacen algunas anotaciones a continuacion.
+
+
 
 ##                        Conclusion
 
