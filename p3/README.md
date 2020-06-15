@@ -102,7 +102,7 @@ Y una ves que se introduzca la palabra _FIN_ se detendra el programa.
 4. Escribir (impar)
 5. FIN
 
-**NOTA 425:** para este problema se reuso la logica del ejercicio 4.2.1 con un ligero ajuste del algoritmo para que en vez de que escribiera un mensaje, contara dependiendo el caso; el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej5.java*
+**NOTA 425:** para este problema se reuso la logica del ejercicio 4.2.2 con un ligero ajuste del algoritmo para que en vez de que escribiera un mensaje, contara dependiendo el caso; el algortimo codificado en *Java* se encuentra en el archivo llamado *Ej5.java*
 
 Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de la practica:
 
@@ -188,6 +188,89 @@ Ahora se analizan y se resuelven los problemas planteados en la seccion **5** de
 11. FIN
 
 **NOTA 53:** 
+
+5. 4. Un programa que dado un numero mayor que 1 y proporcionado por el usuario, indique si el numero es primo o no, para saberlo el residuo de la division sera la clave, donde si el residuo de del numero "n" entre [ _2 ... n-1_ ] debe ser diferente de 0, si es 0 en alguno de los casos, el numero no es primo.
+* El algoritmo solucion seria:
+
+1. HACER
+  1. 1.   Solicitar un numero
+  1. 2.   SI (numero < 2) ENTONCES
+    1. 2. 1.  El numero no es valido, intentelo de nuevo
+    1. 2. 2.  repetir = true
+  1. 3.   SINO
+    1. 3. 1.  repetir = false
+    1. 3. 2.  PARA (i=2;i < numero;i++) HACER
+      1. 3. 2. 1.   residuo = numero%i
+      1. 3. 2. 2.   SI (residuo == 0) ENTONCES
+      1. 3. 2. 2. 1.  El numero no es primo
+      1. 3. 2. 2. 2.  break
+      1. 3. 2. 3.   FIN SI
+    1. 3. 3.  FIN PARA
+  1. 4.   FIN SI
+2.  MIENTRAS (repetir == true)
+3.  SI (residuo != 0) ENTONCES
+  3. 1.   El numero es primo
+4.  FIN SI
+5. FIN
+
+**NOTA 54:**
+
+5. 5. Determinar el n-esimo numero Fibonacci de un numero "n" dado por el usuario, cumpliendo las siguientes restricciones:
+* _fn = (n-1) + (n-2) para n>=2_
+* _Y por definicion: f(0)=0 y f(1)=1_.
+* El algoritmo para resolver este problema es:
+
+1.  HACER
+  1. 1. Ingresa un numero
+  1. 2.   SI (numero < 0) ENTONCES
+    1. 2. 1.  Este numero no es valido para el sistema, intentelo de nuevo
+  1. 3.   SINO
+    1. 3. 1.  OPCION (numero) HACER
+      1. 3. 1. 1.   Caso 0:
+        1. 3. 1. 1. 1.  fn = 0
+        1. 3. 1. 1. 2.  escribir(fn)
+      1. 3. 1. 2.   Caso 1:
+        1. 3. 1. 2. 1.  fn = 1
+        1. 3. 1. 2. 2.  escribir(fn)
+      1. 3. 1. 3.   Por defecto:
+        1. 3. 1. 3. 1.  fn = (numero-1) + (numero-2)
+        1. 3. 1. 3. 2.  escribir(fn)
+    1. 3. 2.  FIN OPCION
+  1. 4.   FIN SI
+2.  MIENTRAS (numero < 0)
+3. FIN
+
+**NOTA 55:**
+
+5. 6. Mostrar los primeros "n" numeros de Padovan de un "n" numero dado por el usuario, siguiendo las reglas:
+* _pn = (n-2) + (n-3) para n>=3_
+* _Y por definicion: p(0)=1, p(1)=1, p(2)=1_.
+* El algoritmo para resolver este problema es:
+
+1. HACER
+  1. 1.   Ingresa un numero
+  1. 2.   SI (numero < 0) ENTONCES
+    1. 2. 1.  Este numero no es valido para el sistema, intentelo de nuevo
+  1. 3.   SINO
+    1. 3. 1.  OPCION (numero) HACER
+      1. 3. 1. 1.   Caso 0:
+        1. 3. 1. 1. 1.  pn = 1
+        1. 3. 1. 1. 2.  escribir(pn)
+      1. 3. 1. 2.   Caso 1:
+        1. 3. 1. 2. 1.  pn = 1
+        1. 3. 1. 2. 2.  escribir(pn)
+      1. 3. 1. 2.   Caso 2:
+        1. 3. 1. 2. 1.  pn = 1
+        1. 3. 1. 2. 2.  escribir(pn)
+      1. 3. 1. 3.   Por defecto:
+        1. 3. 1. 3. 1.  pn = (numero-2) + (numero-3)
+        1. 3. 1. 3. 2.  escribir(fn)
+    1. 3. 2.  FIN OPCION
+  1. 4.   FIN SI
+2. MIENTRAS (numero < 0)
+3. FIN
+
+**NOTA 56:**
 
 ##                        Conclusion
 
