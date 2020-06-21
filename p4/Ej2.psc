@@ -3,12 +3,8 @@ Proceso Ej2
 	Leer n1;
 	Leer n2;
 	Si n1>n2 Entonces
-		Escribir "El mayor es: ", n1;
+		Escribir 'El mayor es: ',n1;
 	SiNo
-		Si n1=n2 Entonces
-			Escribir "Ambos son iguales";
-		SiNo
-			Escribir "El mayor es: ", n2;
-		FinSi
+		Escribir 'El mayor es: ',n2;
 	FinSi
 FinProceso

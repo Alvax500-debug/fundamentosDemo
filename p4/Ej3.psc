@@ -1,14 +1,14 @@
 Proceso Ej3
-	Definir n1,n2,n3,suma,contador Como Entero;
-	contador <- 0;
-	Definir promedio Como Real;
+	Definir n1,n2 Como Entero;
 	Leer n1;
-	contador <- contador+1;
 	Leer n2;
-	contador <- contador+1;
-	Leer n3;
-	contador <- contador+1;
-	suma <- n1+n2+n3;
-	promedio <- suma/contador;
-	Escribir 'El promedio es: ',promedio;
+	Si n1>n2 Entonces
+		Escribir 'El mayor es: ',n1;
+	SiNo
+		Si n1=n2 Entonces
+			Escribir 'Ambos son iguales';
+		SiNo
+			Escribir 'El mayor es: ',n2;
+		FinSi
+	FinSi
 FinProceso
