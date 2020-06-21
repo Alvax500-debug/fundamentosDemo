@@ -22,6 +22,22 @@ El principal punto de esta practica era el uso de un software llamado _PSeInt_, 
 
 13. Realizar **pseudocodigo** y **diagrama de flujo** del ejercicio **5.1** de la practica **3**
 
+* Los ejercicios que se realizaron fuera de clase son los siguientes, en algunos fue necesario hacer investigacion adicional para poder resolver estos ejercicios:
+
+6. Determinar el area de un circulo (ejercicio **4.2** de la practica **2**)
+
+7. Contar cuantos numeros pares e impares hay en 10 numeros ingresados por el usuario (ejercicio **4.2.5** de la practica **3**)
+
+8. Calcular la suma de los primeros _"n"_ numeros naturales utilizando la formula **suma=(n*(n+1))/2** (ejercicio **4.3** de la practica **2**)
+
+9. De _"n"_ numeros dados por el usuario indicar cual es el mayor y cual es el menor. Tanto _"n"_ como los numeros son dados por el usuario (modificacion del ejercicio **4.2.4** de la practica **3**)
+
+10. MCM
+
+11. numero perfecto o no
+
+12. los primeros 6 numeros perfectos
+
 ##                        Resultados
 
 Como resultados se debe empezar por un fallo en la sintaxis de un ejemplo en la estructura _DO-WHILE_ por una variable incorrecta, lo que resulto en un error de compilacion por una variable que no existe y se menciona en el codigo, en el archivo _principal.java_, posteriormente se procedio a realizar los ejercicios de ejemplo de la seccion **4.2** de la practica **3** y de los cuales se hacen algunas anotaciones a continuacion.
