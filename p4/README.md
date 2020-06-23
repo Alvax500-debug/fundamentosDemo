@@ -32,7 +32,7 @@ El principal punto de esta practica era el uso de un software llamado _PSeInt_, 
 
 9. De _"n"_ numeros dados por el usuario indicar cual es el mayor y cual es el menor. Tanto _"n"_ como los numeros son dados por el usuario (modificacion del ejercicio **4.2.4** de la practica **3**)
 
-10. MCM
+10. MCD
 
 11. numero perfecto o no
 
