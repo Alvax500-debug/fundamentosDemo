@@ -1,41 +1,22 @@
 Proceso Ej1
 	Definir a,b,c,n,precio,at,ar,areaT Como Real;
-	Definir repeticion,conservar Como Caracter;
-	repeticion <- 'S';
-	conservar <- 'N';
-	Mientras repeticion='S' Hacer
-		Si conservar='N' Entonces
-			Repetir
-				n <- leerNumero;
-				a <- n;
-				n <- leerNumero;
-				b <- n;
-				n <- leerNumero;
-				c <- n;
-				Si a<=c Entonces
-					Escribir 'Lo sentimos alguna medida no es admitida en el sistema (a o c), intentelo nuevamente';
-				FinSi
-			Hasta Que a>c
-		FinSi
-		at <- areaTri(a,b,c);
-		ar <- areaRec(b,c);
-		areaT <- areaTotal(ar,at);
+	Repetir
 		n <- leerNumero;
-		precio <- n;
-		precioTerreno(precio,areaT);
-		Repetir
-			Leer repeticion;
-			Si repeticion<>'S' Y repeticion<>'N' Entonces
-				Escribir 'Lo sentimos ese valor no es admitido por el sistema, intentelo de nuevo';
-			FinSi
-		Hasta Que repeticion='S' O repeticion='N'
-		Repetir
-			Leer conservar;
-			Si conservar<>'S' Y conservar<>'N' Entonces
-				Escribir 'Lo sentimos ese valor no es admitido por el sistema';
-			FinSi
-		Hasta Que conservar='S' O conservar='N'
-	FinMientras
+		a <- n;
+		n <- leerNumero;
+		b <- n;
+		n <- leerNumero;
+		c <- n;
+		Si a<=c Entonces
+			Escribir 'Lo sentimos alguna medida no es admitida en el sistema (a o c), intentelo nuevamente';
+		FinSi
+	Hasta Que a>c
+	at <- areaTri(a,b,c);
+	ar <- areaRec(b,c);
+	areaT <- areaTotal(ar,at);
+	n <- leerNumero;
+	precio <- n;
+	precioTerreno(precio,areaT);
 FinProceso
 
 SubProceso n <- leerNumero

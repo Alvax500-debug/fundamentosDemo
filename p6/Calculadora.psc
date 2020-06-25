@@ -2,7 +2,16 @@ Proceso Calculadora
 	Definir a,b,res,n Como Real;
 	Definir op Como Entero;
 	Repetir
-		Escribir 'Menu \n1)Sumar \n2)Restar \n3)Multiplicar \n4)Dividir \n5)Factorial \n6)Salir \nElige una opcion:';
+		Escribir 'Menu: ';
+		Escribir '1)Sumar';
+		Escribir '2)Restar';
+		Escribir '3)Multiplicar';
+		Escribir '4)Dividir';
+		Escribir '5)Factorial';
+		Escribir '6)Combinatoria';
+		Escribir '7)Funcion Exponencial, Exp(x), e^x';
+		Escribir '8)Salir';
+		Escribir 'Elige una opcion:';
 		Leer op;
 		Si op>0 Y op<5 Entonces
 			n <- leerNumero;
@@ -29,11 +38,26 @@ Proceso Calculadora
 				res <- factorial(a);
 				imprimeResultado(res);
 			6:
+				Repetir
+					n <- leerNumero;
+					a <- n;
+					n <- leerNumero;
+					b <- n;
+				Hasta Que b<a
+				res <- combinatoria(a,b);
+				Escribir res;
+				imprimeResultado(res);
+			7:
+				n <- leerNumero;
+				a <- n;
+				res <- exponencial(a);
+				imprimeResultado(res);
+			8:
 				Escribir 'Adios';
 			De Otro Modo:
 				Escribir 'Lo sentimos, ingresaste un valor no valido, intentalo de nuevo';
 		FinSegun
-	Hasta Que op=5
+	Hasta Que op=8
 	Escribir 'Apagando Calculadora';
 FinProceso
 
@@ -75,6 +99,26 @@ SubProceso res <- factorial (a)
 	res <- a;
 	Para contador<-a Hasta 2 Con Paso -1 Hacer
 		res <- res*(contador-1);
-		Escribir res;
 	FinPara
+FinSubProceso
+
+SubProceso res <- combinatoria (a,b)
+	Definir res,n,k Como Real;
+	n <- factorial(a);
+	Escribir 'N = ',n;
+	k <- factorial(b);
+	Escribir 'K = ',k;
+	res <- (n/(k*factorial((a-b))));
+FinSubProceso
+
+SubProceso res <- exponencial (a)
+	Definir res Como Real;
+	res <- 1;
+	Definir i,n,x Como Entero;
+	n <- 50;
+	Para i<-1 Hasta n Hacer
+		x <- a^i;
+		res <- res+(x/factorial(i));
+	FinPara
+	Escribir 'La aproximacion es ',res;
 FinSubProceso
