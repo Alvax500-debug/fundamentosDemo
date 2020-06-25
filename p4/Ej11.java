@@ -18,7 +18,7 @@ public class Ej11{
         } while (num<2);
 
         //De acuerdo con la condicion de un numero perfecto:
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i < num; i++) {
             //Se deben sumar los divisores naturales del numero exceptuando al mismo, 
             //para que se sumen de forma correcta estos divisores, estos deben dar como residuo 0
             if (num%i == 0) {
