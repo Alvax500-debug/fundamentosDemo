@@ -32,30 +32,133 @@ El principal punto de esta practica era el uso de un software llamado _PSeInt_, 
 
 9. De _"n"_ numeros dados por el usuario indicar cual es el mayor y cual es el menor. Tanto _"n"_ como los numeros son dados por el usuario (modificacion del ejercicio **4.2.4** de la practica **3**)
 
-10. MCD
+10. Para poder determinar el _Maximo Común Divisor (MCD)_ de 2 numeros (A,B) usando el algortimo de **Euclides** y con las condiciones plateadas en el ejercicio, era necesario investigar, el algoritmo de **Euclides** indica lo siguiente:
+* _Si A = 0 entonces MCD(A,B)=B, ya que el MCD(0,B)=B, y podemos detenernos._ 
+* _Si B = 0 entonces MCD(A,B)=A, ya que el MCD(A,0)=A, y podemos detenernos._
+* _Escribe A en la forma cociente y residuo (A = B * Q + R)._
+* _Encuentra MCD(B,R) al usar el algoritmo de Euclides, ya que MCD(A,B) = MCD(B,R)._
 
-11. numero perfecto o no
+* Siguiendo estas reglas del algoritmo se puede generar la siguiente solucion:
 
-12. los primeros 6 numeros perfectos
+1. HACER
+  1. 1.     HACER
+    1. 1. 1.    Ingresa el valor de a
+    1. 1. 2.    SI a < 0 ENTONCES
+      1. 1. 2. 1.   Valor no permitido, intentelo de nuevo
+    1. 1. 3.    FIN SI
+  1. 2.     MIENTRAS a < 0
+  1. 3.     HACER
+    1. 3. 1.    Ingresa el valor de b
+    1. 3. 2.    SI b < 0 ENTONCES
+      1. 3. 2. 1.   Valor no permitido, intentelo de nuevo
+    1. 3. 3.    FIN SI
+  1. 4.     MIENTRAS b < 0
+  1. 5.     SI a < b ENTONCES
+    1. 5. 1.    a debe ser mayor que b, intentelo de nuevo
+  1. 6.     FIN SI
+2. MIENTRAS a < b
+3. HACER
+  3. 1.     MCD(a,b)
+  3. 2.     q = (Entero)a/b
+  3. 3.     r = a%b
+  3. 4.     Escribir(a, "=", b, "*", q, "+", r)
+  3. 5.     a = b
+  3. 6.     b = r
+4. MIENTRAS r > 0
+5. MCD(a,b)
+6. SI a != 0 ENTONCES
+  6. 1.     El MCD de ambos numeros es a
+7. SINO
+  7. 1.     SI b != 0 ENTONCES
+    7. 1. 1.    El MCD de ambos numeros es b
+  7. 2.     SINO
+    7. 2. 1.    Ocurrio un error inesperado
+  7. 3.     FIN SI
+8. FIN SI
+9. FIN
+
+**NOTA 10:** para no perder el hilo del ejemplo que segui de la fuente _https://es.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm_, fue necesario imprimir cada ciclo de acuerdo a la nomenclatura previamente descrita. 
+
+
+11. El programa que determina si un numero es **perfecto** o no, aunque el propio ejercicio indicaba las condiciones que debia cumpliar un numero para ser **perfecto** realice una investigacion adicional para tener ejemplos mas claros de numeros perfectos.
+
+* El algoritmo que se utiliza para resolver este problema es:
+
+1. HACER
+  1. 1.     Ingresa un numero para verificar si es perfecto
+  1. 2.     SI num < 2 ENTONCES
+    1. 2. 1.    Valor no valido, intentelo de nuevo
+  1. 3.     FIN SI
+2. MIENTRAS num < 2
+3. PARA (i = 1; i < (num-1); i++) HACER
+  3. 1.     SI num%i==0 ENTONCES
+    3. 1. 1.    suma = suma + i
+  3. 2.     FIN SI
+4. FIN PARA
+5. SI suma == num ENTONCES
+  5. 1. El numero es perfecto
+6. SINO
+  6. 1. El numero no es perfecto
+7. FIN SI
+8. FIN
+
+**NOTA 11:** con base en la pagina _https://matematicascercanas.com/2015/03/04/numeros-perfectos/_, utilice algunos de estos ejemplos para verificar la funcionalidad de mi algoritmo.
+
+12. Encontrar los primeros 6 numeros **perfectos**, con base en el ejercicio anterior, ahora se deben mostrar en pantalla los 6 primeros numeros perfectos.
+
+* Los ajustes al algoritmo quedan de la siguiente manera:
+
+1. num = 2, contador = 0, suma = 0
+2. MIENTRAS contador < 6
+  2. 1.     PARA (i = 1; i < (num-1); i++) HACER
+    2. 1. 1.         SI num%i==0 ENTONCES
+      2. 1. 1. 1.        suma = suma + i
+    2. 1. 2.         FIN SI
+  2. 2.     FIN PARA
+  2. 3.     SI suma == num ENTONCES
+    2. 3. 1.    contador = contador + 1
+    2. 3. 2.    OPCION (contador) ELEGIR
+        2. 3. 2. 1.      Caso 1:
+        2. 3. 2. 1. 1.       El primer numero perfecto es, num
+        2. 3. 2. 2.      Caso 2:
+        2. 3. 2. 2. 1.       El segundo numero perfecto es, num
+        2. 3. 2. 3.      Caso 3:
+        2. 3. 2. 3. 1.       El tercer numero perfecto es, num
+        2. 3. 2. 4.      Caso 4:
+        2. 3. 2. 4. 1.       El cuarto numero perfecto es, num
+        2. 3. 2. 5.      Caso 5:
+        2. 3. 2. 5. 1.       El quinto numero perfecto es, num
+        2. 3. 2. 6.      Caso 6:
+        2. 3. 2. 6. 1.       El sexto numero perfecto es, num
+    2. 3. 3.     FIN OPCION
+  2. 4.     FIN SI
+  2. 5.     num = num + 1
+  2. 6.     suma = 0
+3. FIN MIENTRAS
+4. FIN
+
+**NOTA 12:** de la misma fuente mencionada en la **NOTA 11** se tomo la referencia de las primeros 6 numeros **perfectos** para comprobar que el sistema funcionaba de forma correcta.
 
 ##                        Resultados
 
-Como resultados se debe empezar por un fallo en la sintaxis de un ejemplo en la estructura _DO-WHILE_ por una variable incorrecta, lo que resulto en un error de compilacion por una variable que no existe y se menciona en el codigo, en el archivo _principal.java_, posteriormente se procedio a realizar los ejercicios de ejemplo de la seccion **4.2** de la practica **3** y de los cuales se hacen algunas anotaciones a continuacion.
+En este caso todos los ejercicios fueron resueltos correctamente y se pudieron realizar, todos bajo el nombre de _Ejx_, un archivo de cada tipo por ejercicio y algunos de los ejercicios mas destacables de esta practica son:
 
-Para esta parte de la practica se acordo usar como nombre de los archivos del codigo fuente las letras _Ejx.java_ que se referian a ejercicios y la x cambiada por el numero correspondiente al ejercicio, estos realizados durante la sesion y en los cuales todos quedaron resueltos guiados por el profesor, donde tambien aprendimos que para comparar _Strings_ se debe usar el metodo _equals()_ que pertenece a la clase _String_ y regresa **true** o **false** dependiendo de si las cadenas de texto coinciden o no; una vez realizados estos ejercicios, lo siguiente es la seccion **5** de la practica **3** y se comenta mas al respecto de cada ejercicio enel siguiente parrafo.
+10. Ya que el algoritmo de **Euclides** es nuevo para mi tuve que seguir casi al pie de la letra el ejemplo de la fuente citada en la **NOTA 10**, ya que a pesar de ser algo sencillo, el ejemplo me confundia, hasta que resolviendo el problema lo fui entendiendo, sin embargo deje la logica usada intacta para el _diagrama de flujo_, el _pseudocodigo_ y el _codigo fuente_ en java, ya que era mas sencillo para mi el comprenderlo de esa manera y siento que es mas claro asi.
 
-Para esta seccion de la practica opte por nombrar a los archivos de codigo como *Cinco_xxxx.java*, que _Cinco_ es por la seccion de la practica y _xxxx_ se reemplazaria por el numero del ejercicio escrito con letras (uno,tres,etc.), aqui cada ejercicio tenias ddefinidas las reglas y restricciones que se debian respetar y seguir, asi como sus formulas matematicas; no resulto dificil resolver los ejercicios despues de analizar y pensar a fondo un poco cada uno, por lo que al final todos quedaron resueltos y compilados correctamente, como detalle adicional cabe resaltar que el objeto que se utilizaba para leer los datos desde teclado en cada archivo se denomino _leer_, instanciado de la clase _Scanner_.
+11. Los numeros **perfectos** era algo bastante comprensible, sin embargo solo venia uno en la redaccion del ejercicio, opte por investigar para tener mas ejemplos de estos numeros y fue mas facil de esa forma revisar que el algoritmo funcionaba, basandome en los numeros que indicaba la fuente de la **NOTA 11** en lugar de revisarlos yo mismo, uno por uno.
+
+12. Aqui hay una ligera diferencia entre el _pseudocodigo_ y el _codigo fuente_ es el tipo de dato utilizado y de nuevo como referencia se uso la funte citada en la **NOTA 11**.
 
 ##                        Discusion
 
-Aqui una comparacion mas que evidente son los ejercicios _3_ de la seccion **4.2** y el _1_ de la seccion **5** son el mismo y bajo la misma logica son resueltos, pero ya en codigo la diferencia es la estructura de control usada para resolverlo, aqui algunas de las observaciones son:
+Algunas comparaciones que se pueden hacer es con los ejercicios **12** y **13**, mas que nada en las diferencias existentes entre los _pseudocodigos_ y los _codigos fuentes_, debido a las limitaciones del perfil usado para _PSeInt_ comparado con el lenguaje _Java_:
 
-* En comparacion usando la estructura **switch** es mas sencillo y eficiente que usar multiples **if**
+12. Ya que por las abismales dimensiones del 5to y 6to numeros **perfectos** opte por usar el tipo _long_ en lugar de _int_ en _Java_
 
-* La diferencia mas notable en esto, es que no se compara o se utiliza como parametro un valor _boolean_ sino el contanido exacto de la variable _String_ y de ahi se asigna al caso correspondiente
+13. Aqui la comparacion que se hace es que el _pseudocodigo_ se tuvo que realizar con variables y switch para _char_ en lugar de _String_ como en _Java_
 
-* Es importante mencionar que aqui importa mucho la cadena de texto asignada a cada _Case_, ya que es sensible a mayusculas y minusculas, por ese motivo se debe ser muy exacto y preciso a la hora de asignar y comparar las cadenas con los _case_, para que estos puedan ser ejecutados correctamente
+Fuera de esos ejercicios, los demas tanto el _diagrama de flujo_ como el _pseudocodigo_ y el _codigo fuente_ quedaron practicamente iguales, excepto por los ciclos _for_ ya que para estos en el _pseudocodigo_, la variable que fungia como contador debia ser declara desde antes y fuera de este.
 
 ##                        Conclusion
 
-Esta practica sirvio bastante para identificar las estructuras de control existentes en _java_ asi como determinar en que momento y como usarlas al resolver algoritmos mediante _java_, fueron ejercicios bastante interesantes ademas el repaso de hacer algortimos antes de codificar la solucion, incluyendo tambien el haber aprendido cosas como el metodo _equals()_ y la forma correcta de implementar la estructura **switch** con _Strings_. 
+Al final, despues de un par de ejercicios se hizo mas facil e intuitivo el uso del software _PSeInt_, ademas de aprender las diferentes limitaciones del perfil usado comparados con _Java_ y la forma de expresar nuestros algoritmos en varias formas, llevarlo de algoritmo a _diagrama de flujo_ o _pseudocodigo_ y posteriormente a _codigo fuente_ en _Java_.
