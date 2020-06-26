@@ -59,8 +59,10 @@ public class Calculadora{
 
     public static double leerNumero(Scanner sc){
         double n = 0;
-        System.out.print("\nIngrese un valor:");
-        n = sc.nextDouble();
+        while (n==0) {
+            System.out.print("\nIngrese un valor:");
+            n = sc.nextDouble();
+        }
         return n;
     }
 
