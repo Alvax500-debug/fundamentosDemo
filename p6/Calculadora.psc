@@ -51,7 +51,6 @@ Proceso Calculadora
 				n <- leerNumero;
 				a <- n;
 				res <- exponencial(a);
-				imprimeResultado(res);
 			8:
 				Escribir 'Adios';
 			De Otro Modo:
@@ -105,20 +104,18 @@ FinSubProceso
 SubProceso res <- combinatoria (a,b)
 	Definir res,n,k Como Real;
 	n <- factorial(a);
-	Escribir 'N = ',n;
 	k <- factorial(b);
-	Escribir 'K = ',k;
 	res <- (n/(k*factorial((a-b))));
 FinSubProceso
 
 SubProceso res <- exponencial (a)
-	Definir res Como Real;
+	Definir res,x Como Real;
 	res <- 1;
-	Definir i,n,x Como Entero;
+	Definir i,n Como Entero;
 	n <- 50;
 	Para i<-1 Hasta n Hacer
-		x <- a^i;
+		x <- (a^i);
 		res <- res+(x/factorial(i));
 	FinPara
-	Escribir 'La aproximacion es ',res;
+	Escribir 'El resultado es un valor aproximado a ',res;
 FinSubProceso

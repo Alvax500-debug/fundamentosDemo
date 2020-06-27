@@ -11,7 +11,7 @@ public class Calculadora{
         do {
             System.out.println("\nHoli, que operacion deseas realizar");
 
-            System.out.println("\n1)Suma \n2)Resta \n3)Multiplicacion \n4)Division \n5)Salir");
+            System.out.println("\n1)Suma \n2)Resta \n3)Multiplicacion \n4)Division \n5)Factorial \n6)Combinatoria \n7)Funcion Exponencial, Exp(x), e^x \n8)Salir");
 
             System.out.print("\nOperacion: ");
 
@@ -43,7 +43,28 @@ public class Calculadora{
                     imprimirResultado(res);
                     break;
 
-                case 5: //Despedida
+                case 5: //Factorial
+                    a = leerNumero(leer);
+                    res = factorial(a);
+                    imprimirResultado(res);
+                    break;
+
+                case 6: //Combinatoria
+                    do {
+                        a = leerNumero(leer);
+                        b = leerNumero(leer);    
+                    } while (b>a);
+                    
+                    res = combinatoria(a, b);
+                    imprimirResultado(res);
+                    break;
+
+                case 7: //Factorial
+                    a = leerNumero(leer);
+                    exponencial(a);
+                    break;
+
+                case 8: //Despedida
                     System.out.println("\nAdios n.n");
                     break;
             
@@ -51,7 +72,7 @@ public class Calculadora{
                     System.out.println("\nOperacion no valida, intentelo de nuevo");
                     break;
             }
-        } while (opcion != 5);
+        } while (opcion != 8);
 
         System.out.println("\nApagando calculadora");
 
@@ -59,8 +80,10 @@ public class Calculadora{
 
     public static double leerNumero(Scanner sc){
         double n = 0;
-        System.out.print("\nIngrese un valor:");
-        n = sc.nextDouble();
+        while (n==0) {
+            System.out.print("\nIngrese un valor:");
+            n = sc.nextDouble();
+        }
         return n;
     }
 
@@ -90,5 +113,37 @@ public class Calculadora{
         double r;
         r = a / b;
         return r;
+    }
+
+    public static double factorial(double a) {
+        double r, contador = a;
+        r = a;
+        //System.out.println("El factorial");
+        while (contador > 2) {
+            r = multiplicar(r, restar(contador, 1));
+            //System.out.println(r);
+            contador = restar(contador, 1);
+        }
+        return r;
+    }
+
+    public static double combinatoria(double a, double b) {
+        double r, n, k;
+        n = factorial(a);
+        //System.out.println(n);
+        k = factorial(b);
+        //System.out.println(b);
+        r = dividir(n, multiplicar(k, factorial(restar(a,b))));
+        return r;
+    }
+
+    public static void exponencial(double a) {
+        double r = 1, x = 0;
+        int n = 50;
+        for (int i = 1; i <= n; i++) {
+            x = Math.pow(a, i);
+            r = sumar(r, dividir(x, factorial(i)));
+        }
+        System.out.println("\nEl resultado es un valor aproximado a "+ r);
     }
 }
