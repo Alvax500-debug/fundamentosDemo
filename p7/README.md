@@ -60,7 +60,7 @@ La practica consistia de 4 ejercicios, 2 vistos durante la clase y 2 mas que sol
 
 ![Diagrama Ej4gato](Ej4gato.png "Ej4gato")
 
-**NOTA 2:** aqui la logica del **gato** varia ligeramente comparado con _Java_, el **pseudocodigo** no esta completo aqui, los diagramas solo son para mostrar graficamente el algoritmo usado para los modulos listados en la parte superior.
+**NOTA 4:** aqui la logica del **gato** varia ligeramente comparado con _Java_, el **pseudocodigo** no esta completo aqui, los diagramas solo son para mostrar graficamente el algoritmo usado para los modulos listados en la parte superior.
 
 ##                        Resultados
 
