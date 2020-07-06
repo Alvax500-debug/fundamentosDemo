@@ -13,6 +13,11 @@ La practica consistia de 4 ejercicios, 2 vistos durante la clase y 2 mas que sol
 * El algoritmo usado para este ejercicio es el siguiente:
 ![Diagrama Ej1](Ej1recorrido.png "Ej1recorrido")
 
+2. **Busqueda:** para este ejercicio debiamos de generar un arreglo unidimensional, rellenarlo usando la funcion **Math.random** de _Java_ y posteriormente imprimirlo, luego solicitar al usuario un numero y buscar si es que el numero ingresado existia o no dentro del arreglo y mostrar en pantalla dicha conclusion.
+
+* El algoritmo implementao en este ejercicio es el siguiente:
+![Diagrama Ej2](Ej2Busqueda.png "Ej2Busqueda")
+
 ##                        Resultados
 
 
