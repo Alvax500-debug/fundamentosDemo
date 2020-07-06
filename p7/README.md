@@ -64,11 +64,12 @@ La practica consistia de 4 ejercicios, 2 vistos durante la clase y 2 mas que sol
 
 ##                        Resultados
 
-
+Ya que esta practica no cuenta con ningun enunciado, los ejercicio fueron establecido durante la sesion del dia **30/06/2020**, asi mismo desde esa sesion se establecio que los nombres de los archivos correspondientes ejercicios serian: _EjXdescripcion.java_; donde la _X_ corresponde al numero dele ejercicio y la _descripcion_ a lo que hace cada uno, igualmente no habia requesitos extras como **diagramas** o **pseudocodigos**, pero estos fueron anexados como documentacion extra y a modo ilustrativo de este reporte, los archivos de _PSeInt_ cumplen la misma regla de nombres que los de _Java_
 
 ##                        Discusion
 
-
+Esta practica con los ejercicio _3_ y _4_ fue muy similar a la **Calculadora** que habiamo realizado con aterioridad en cuanto a la parte **MODULAR**, solo que esta vez fue un poco mas claro para mi el uso y distribucion de los _modulos_ asi como su funcionalidad dentro del programa, igualmente se visualizo un poco mejor para mi la repercusion que se tiene cuando modificas o ajustas algun modulo que estaba funcionando anteriormente.
 
 ##                        Conclusion
 
+El objetivo primordial de la practica era el entendimiento y manejo de arreglo en _Java_, cosa que se puede decir, quedo mas que clara y ademas un gran repaso y aplicacion de la _programacion modular_ sobre todo en el _Ej4gato_ donde se usaba aplimente ese tema junto con la forma de revisar y validar determinados datos en un arreglo, para determinar al ganador del juego, ejercicios como ese, algo complicados y diferentes a lo comun, ayudan entender mejor los temas.
