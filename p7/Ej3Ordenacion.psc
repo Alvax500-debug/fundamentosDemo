@@ -3,6 +3,8 @@ Proceso Ej3Ordenacion
 	Definir n,r Como Entero;
 	n <- 50;
 	r <- 99;
+	Dimension arr[50];
+	Dimension arrOrd[50];
 	arr <- generArreglo(n,r);
 	imprimirArreglo(n,arr);
 	arrOrd <- ordenArreglo(n,arr);
