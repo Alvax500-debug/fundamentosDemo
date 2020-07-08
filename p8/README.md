@@ -14,25 +14,25 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 
 * **Complejo**
 
-* //Atributos
+* //_Atributos_
 * privado doble real;
 * privado doble imaginario;
 
-* //Constructores
+* //_Constructores_
 * publico Complejo(){}
 * publico Complejo(doble real, doble imaginario){}  //Aqui ya se incluye el _punto 3_ del enunciado de la practica, con un **Constructor** para inicializar los atributos de esta clase
 
-* //Metodos set y get para el elemento real
+* //_Metodos set y get para el elemento real_
 * publico doble getReal(){}
 * publico void setReal(doble real){}
 
-* //Metodos set y get para el elemento imaginario
+* //_Metodos set y get para el elemento imaginario_
 * publico doble getImaginario(){}
 * publico void setImaginario(doble imaginario){}
 
 * **Procesador**
 
-* //Metodos
+* //_Metodos_
 * publico Complejo sumar(Complejo c1, Complejo c2){}
 * publico Complejo restar(Complejo c1, Complejo c2){}
 * publico Complejo multiplicar(Complejo c1, Complejo c2){}
@@ -40,29 +40,29 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 
 * **Pantalla**
 
-* //Metodos
+* //_Metodos_
 * publico void imprimirComplejo(Complejo c){}
 
 * **Teclado**
 
-* //Atributos
+* //_Atributos_
 * Scanner leer(System.in);
 
-* //Metodos
+* //_Metodos_
 * publico String capturaOper(){}
 * publico String capturaNumero(){}
 
 * **Calculadora**
 
-* //Atributos
+* //_Atributos_
 * Pantalla p;
 * Teclado t;
 * Procesador proc;
 
-* //Constructores
+* //_Constructores_
 * publico Calculadora(){}
 
-* //Metodos
+* //_Metodos_
 * publico void on(){}
 
 Como punto importante cabe mencionar que las _clases_ pueden ser tomadas tambien como nuevos tipos de datos compuestos y estos pueden ser declarados y usados entre diferentes _clases_ que se encuentren dentro del mismo _proyecto_ y esta sean publicas; como recordatorio el **declarar como variables** a una _clase_ se le llama instanciar, esto quiere decir crear **objetos** que son del tipo de la _clase_ y estos pueden ser usados como _variables_, asi como usar tambien sus **metodos y atributos**.
