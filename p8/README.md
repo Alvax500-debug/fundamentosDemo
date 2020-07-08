@@ -12,7 +12,7 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 
 2. Crear las clases: Calculadora, Teclado, Procesador, Pantalla y Complejo, siguiendo las instrucciones y quedando de la siguiente manera:
 
-* **Complejo**
+**Complejo**
 
 * //_Atributos_
 * privado doble real;
@@ -30,7 +30,7 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 * publico doble getImaginario(){}
 * publico void setImaginario(doble imaginario){}
 
-* **Procesador**
+**Procesador**
 
 * //_Metodos_
 * publico Complejo sumar(Complejo c1, Complejo c2){}
@@ -38,12 +38,12 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 * publico Complejo multiplicar(Complejo c1, Complejo c2){}
 * publico Complejo dividir(Complejo c1, Complejo c2){}
 
-* **Pantalla**
+**Pantalla**
 
 * //_Metodos_
 * publico void imprimirComplejo(Complejo c){}
 
-* **Teclado**
+**Teclado**
 
 * //_Atributos_
 * Scanner leer(System.in);
@@ -52,7 +52,7 @@ La practica se fue realizando durante la sesion del jueves **02/07/2020** con la
 * publico String capturaOper(){}
 * publico String capturaNumero(){}
 
-* **Calculadora**
+**Calculadora**
 
 * //_Atributos_
 * Pantalla p;
