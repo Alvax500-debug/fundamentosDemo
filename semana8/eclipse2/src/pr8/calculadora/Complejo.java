@@ -2,8 +2,8 @@ package pr8.calculadora;
 
 public class Complejo {
 	
-	double real;
-	double imaginario;
+	private double real;
+	private double imaginario;
 	
 	public Complejo() {
 		super();
